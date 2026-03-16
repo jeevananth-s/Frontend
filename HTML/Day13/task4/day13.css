@@ -1,0 +1,9 @@
+
+.story{
+    justify-content: center;
+    align-items: center;
+}
+p::first-letter{
+    color: red;
+    font-size: 70px;
+}

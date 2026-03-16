@@ -1,0 +1,16 @@
+.container{
+    background-color: black;
+    width: 80%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+
+}
+.box{
+    background-color: brown;
+    width:150px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}

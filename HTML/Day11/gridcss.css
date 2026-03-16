@@ -1,0 +1,14 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 150px;
+    
+
+}
+.item img{
+    height: 200px;
+    width: 50%;
+    padding: 20px;
+}

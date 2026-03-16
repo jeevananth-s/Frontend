@@ -1,0 +1,43 @@
+.banner{
+    background-color: rgba(131, 130, 130, 0.142);
+    padding: 20px;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    width:250px;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+.description{
+    color: grey;
+}
+.footer{
+    background-color: rgb(199, 198, 198);
+    padding: 15px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.tag{
+    background-color: rgb(59, 59, 245);
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    
+}
+.image{
+    position: relative;
+
+}
+img{
+    width: 200px;
+    height: 180px;
+}

@@ -1,0 +1,21 @@
+.container{
+    background-color: black;
+    color: beige;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+
+}
+.flex{
+    background-color: brown;
+
+    text-align: center;
+    
+}
+.flex img{
+    height: 200px;
+}
