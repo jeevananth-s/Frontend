@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TN Road Assistance - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/1.png" alt="TN Road Assistance Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Pricing & Services</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <a href="reg.html" class="btn btn-white">Sign Up</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 2rem; background: linear-gradient(135deg, rgba(5,150,105,0.1) 0%, rgba(255,255,255,0) 100%);">
+        <div class="card glass form-container" style="width: 100%; margin: 0;">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <img src="assets/1.png" alt="Logo" style="height: 50px; width: auto; border-radius: 0; margin-bottom: 1rem;">
+                <h1 class="form-title">Welcome Back</h1>
+                <p class="form-subtitle">Journey meets comfort</p>
+            </div>
+
+            <form action="index.html">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pwd" class="form-label">Password</label>
+                    <input type="password" id="pwd" name="pwd" class="form-input" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-full mt-4">Login</button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 1.5rem; color: var(--text-color);">
+                Don't have an account? <a href="reg.html" class="text-primary" style="font-weight: 600;">Sign up</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="margin-top: 0; padding: 2rem 5%;">
+        <p>&copy; 2024 TN Road Assistance. All rights reserved.</p>
+    </footer>
+</body>
+</html>

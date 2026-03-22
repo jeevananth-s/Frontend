@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TN Road Assistance - Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/1.png" alt="TN Road Assistance Logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Pricing & Services</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <a href="reg.html" class="btn btn-white">Sign Up</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main style="flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 2rem; background: linear-gradient(135deg, rgba(5,150,105,0.1) 0%, rgba(255,255,255,0) 100%);">
+        <div class="card glass form-container" style="width: 100%; max-width: 600px; margin: 0;">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <h1 class="form-title">Create an Account</h1>
+                <p class="form-subtitle">Register your details below</p>
+            </div>
+
+            <form action="login.html">
+                <div class="form-group">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pwd" class="form-label">Password</label>
+                    <input type="password" id="pwd" name="pwd" class="form-input" placeholder="Min 8 characters" minlength="8" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Gender</label>
+                    <div class="radio-group">
+                        <label class="form-check">
+                            <input type="radio" name="gender" value="male" required> Male
+                        </label>
+                        <label class="form-check">
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                        <label class="form-check">
+                            <input type="radio" name="gender" value="other"> Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Contact Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="10-Digit mobile number" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea id="address" name="address" class="form-input" rows="3" placeholder="Enter address with PIN code" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-full mt-4">Register</button>
+            </form>
+            
+            <div style="text-align: center; margin-top: 1.5rem; color: var(--text-color);">
+                Already have an account? <a href="login.html" class="text-primary" style="font-weight: 600;">Log in</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="margin-top: 0; padding: 2rem 5%;">
+        <p>&copy; 2024 TN Road Assistance. All rights reserved.</p>
+    </footer>
+</body>
+</html>
