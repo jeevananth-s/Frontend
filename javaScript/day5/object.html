@@ -1,0 +1,268 @@
+<script>
+// object
+// 1
+let obj1 = { name: "Jeevananth", age: 28 };
+console.log(obj1.name);
+
+
+// 2
+let obj2 = { city: "Chennai", pincode: 600001 };
+console.log(obj2.pincode);
+
+
+// 3
+let obj3 = { product: "Laptop", price: 50000 };
+console.log(obj3.product);
+
+
+// 4
+let obj4 = { brand: "Nike", size: 42 };
+console.log(obj4.brand);
+
+
+// 5
+let obj5 = { course: "JavaScript", duration: "3 months" };
+console.log(obj5.course, obj5.duration);
+
+
+// 6
+let obj6 = { movie: "Madrasapattinam", rating: '8/10' };
+console.log(obj6.movie, obj6.rating);
+
+
+// 7
+let obj7 = { language: "English", level: "Intermediate" };
+console.log(obj7.language);
+
+
+// 8
+let obj8 = { car: "Hyundai", model: "i20" };
+console.log(obj8.car);
+
+
+// 9
+let obj9 = { book: "Atomic Habits", author: "James Clear" };
+console.log(obj9.author);
+
+
+
+// 10
+let obj10 = { phone: "Nothing", price: 50000 };
+
+//nested objects
+// 1
+const person = {
+  name: "Kumar",
+  address: {
+    city: "Chennai",
+    area: "T Nagar"
+  }
+};
+console.log(person.address.city);
+
+// 2
+const student = {
+  id: 1,
+  marks: {
+    english: 80,
+    maths: 95
+  }
+};
+console.log(student.id, student.marks.maths);
+
+// 3
+const car = {
+  brand: "Hyundai",
+  engine: {
+    type: "Diesel",
+    mileage: 20
+  }
+};
+console.log(car.engine.mileage);
+
+// 4
+const user = {
+  username: "Jeevananth",
+  profile: {
+    email: "jeevananthsakthi@mail.com",
+    phone: 7397598890
+  }
+};
+console.log(user.profile.email);
+
+// 5
+const laptop = {
+  brand: "Dell",
+  specs: {
+    ram: "8GB",
+    storage: {
+      type: "SSD",
+      size: "256GB"
+    }
+  }
+};
+console.log(laptop.specs.storage.type);
+
+// 6
+const school = {
+  name: "Bharathi School",
+  class: {
+    section: "A",
+    strength: 40
+  }
+};
+console.log(school.class.section);
+
+// 7
+const movie = {
+  title: "Madrasapattinam",
+  cast: {
+    hero: "Arya",
+    villain: "British Soldier"
+  }
+};
+console.log(movie.cast.villain);
+
+// 8
+const mobile = {
+  brand: "OnePlus",
+  features: {
+    battery: "5000mAh",
+    camera: {
+      front: "16MP",
+      back: "64MP"
+    }
+  }
+};
+console.log(mobile.features.camera.front);
+
+// 9
+const company = {
+  name: "Infosys",
+  department: {
+    HR: {
+      employees: 25
+    }
+  }
+};
+console.log(company.name, company.department.HR.employees);
+
+// 10
+const book = {
+  title: "JS Basics",
+  author: {
+    name: "Arun",
+    contact: {
+      phone: 1234567890
+    }
+  }
+};
+console.log(book.author.contact.phone);
+
+// 11
+const bank = {
+  name: "HDFC",
+  account: {
+    type: "Savings",
+    balance: {
+      amount: 100000
+    }
+  }
+};
+console.log(bank.account.balance.amount);
+
+// 12
+const hospital = {
+  name: "City Hospital",
+  doctor: {
+    name: "Dr. Raja",
+    specialization: {
+      field: "Neurology"
+    }
+  }
+};
+console.log(hospital.doctor.specialization.field);
+
+// 13
+const game = {
+  name: "Football",
+  team: {
+    players: {
+      striker: "Messi"
+    }
+  }
+};
+console.log(game.team.players.striker);
+
+// 14
+const order = {
+  id: 101,
+  product: {
+    name: "Shoes",
+    price: {
+      value: 2500
+    }
+  }
+};
+console.log(order.product.price.value);
+
+// 15
+const weather = {
+  city: "Chennai",
+  temp: {
+    current: {
+      value: 33
+    }
+  }
+};
+console.log(weather.temp.current.value);
+
+
+
+//array of objects
+
+const students = [
+  { id: 1, name: "Arun", marks: 85 },
+  { id: 2, name: "Kumar", marks: 90 },
+  { id: 3, name: "Ravi", marks: 78 },
+  { id: 4, name: "Siva", marks: 88 },
+  { id: 5, name: "Mani", marks: 92 }
+];
+
+console.log(students[1].name, students[1].marks);    
+console.log(students[1].marks);   
+console.log(students[4].id); 
+
+const products = [
+  { id: 101, name: "Laptop", price: 50000 },
+  { id: 102, name: "Mobile", price: 20000 },
+  { id: 103, name: "Tablet", price: 15000 },
+  { id: 104, name: "Watch", price: 5000 },
+  { id: 105, name: "Headphones", price: 3000 }
+];
+
+console.log(products[0].price);   
+console.log(products[2].name);    
+console.log(products[3].id); 
+
+const employees = [
+  { id: 1, name: "John", role: "Developer" },
+  { id: 2, name: "David", role: "Designer" },
+  { id: 3, name: "Sam", role: "Manager" },
+  { id: 4, name: "Alex", role: "Tester" },
+  { id: 5, name: "Chris", role: "HR" }
+];
+
+console.log(employees[0].role);   
+console.log(employees[3].name);   
+console.log(employees[2].id);     
+
+
+
+
+
+
+
+
+
+</script>
