@@ -1,0 +1,16 @@
+<script>
+    function checkOddEven(num) {
+        if(num%2==0){
+            console.log("even")
+        }
+        else {
+            console.log("odd");
+            
+        }
+    }
+    function callback(num,check) {
+            check(num);
+        
+    }
+    callback(5,checkOddEven);
+</script>
