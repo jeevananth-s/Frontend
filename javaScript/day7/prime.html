@@ -1,0 +1,19 @@
+<script>
+    let number=13;
+    const prime=(n) => {
+        for(let i=n-1;i>1;i--){
+            if (n%i==0){
+                return false
+            }
+        }
+    }
+    if (prime(number)===false) {
+        console.log("not Prime number");
+
+    }
+    else {
+        console.log("prime number");
+        
+    }
+
+</script>
