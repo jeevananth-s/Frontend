@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+
+    <body><center>
+        <header><center><h1><strong>JUSTICE LEAGUE REGISTRATION FORM</strong></h1></center></header>
+
+        <form>
+            <table>
+                <tr>
+                    <td><label>Enter your name</label></td>
+                    <td><input type="text" placeholder="Enter name" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Date of Birth</label></td>
+                    <td><input type="date" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Age</label></td>
+                    <td><input type="number" min=0 required/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" name="gender"/>Male
+                            <input type="radio" name="gender"/>Female
+                            <input type="radio" name="gender"/>Others
+                        </td>
+                </tr>
+
+                <tr>
+                    <td><label>Enter Father's name</label></td>
+                    <td><input type="text" placeholder="Enter name " required/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Enter Mother's name</label></td>
+                    <td><input type="text" placeholder="Enter name" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Mail</label></td>
+                    <td><input type="email" placeholder="Enter email id"/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Address</label></td>
+                    <td><textarea cols="30" rows="3" required></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label>Mobile</label></td>
+                    <td><input type="tel" minlength="10" maxlength="10" placeholder="Enter your 10 digit number" required/></td>
+                </tr>
+
+                <tr>
+                    <td><label>Education</label></td>
+
+                    <td>
+                        <select required>
+                            <option value="" selected disabled>Select your education</option>
+                            <option value="sslc">SSLC</option>
+                            <option value="hsc">HSC</option>
+                            <option value="ug">UG</option>
+                            <option value="pg">PG</option>
+                            <option value="">None of the above</option>
+                        </select>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><label>Enter the Skills</label></td>
+                    
+                    <td>
+                        <fieldset>
+                            <input type="checkbox" name="Skills"/>Running
+                            <input type="checkbox" name="Skills"/>Chasing
+                            <input type="checkbox" name="Skills"/>Fighting
+                            <input type="checkbox" name="Skills"/>Firing
+                        </fieldset>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Powers</label></td>
+                    
+                    <td>
+                        <fieldset>
+                            <input type="checkbox" name="Powers"/>Normal
+                            <input type="checkbox" name="Powers"/>Immortal
+                            <input type="checkbox" name="Powers"/>Demi-God
+                            <input type="checkbox" name="Powers"/>God-Level
+                            <input type="checkbox" name="Powers"/>Cyborg
+                        </fieldset>
+                    </td>
+                </tr>
+                    
+                <tr>
+                    <td><label></label></td>
+                    <td>
+                        <br><input type="submit" value="Register">
+                        <input type="reset" value="Reset"/>
+                    </td>
+                </tr>
+                           
+            </table>
+
+        </form>
+
+        <div>
+            <table border="3">
+                <thead>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Date of Birth</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Father's name</th>
+                    <th>Mother's name</th>
+                    <th>e-mail</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Education</th>
+                    <th>Skills</th>
+                    <th>Powers</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Jeevananth</td>
+                        <td>28-01-1998</td>
+                        <td>28</td>
+                        <td>Male</td>
+                        <td>Sakthivel</td>
+                        <td>Vasuki</td>
+                        <td>jeevananthsakth@gmail.com</td>
+                        <td>Chennai</td>
+                        <td>7397598890</td>
+                        <td>UG</td>
+                        <td>Fighting</td>
+                        <td>God-Level</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+       
+    </center></body>
+</html>
