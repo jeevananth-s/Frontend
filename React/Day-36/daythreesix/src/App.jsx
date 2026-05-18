@@ -1,0 +1,13 @@
+import React from 'react'
+import { Route , Routes } from 'react-router-dom'
+import Home from './Home' 
+const App = () => {
+  const data = "Jeevananth"
+  return (
+    <>
+      <Home sending={data} />
+    </>
+  )
+}
+
+export default App

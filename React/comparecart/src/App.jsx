@@ -1,16 +1,25 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+
+import Home from "./pages/Home";
+import Compare from "./pages/Compare";
+import Cart from "./pages/Cart";
 
 const App = () => {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home/>}></Route>
-      </Routes>
-      
-    </div>
-  )
-}
+    <div className="min-h-screen bg-gray-100">
 
-export default App
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/compare" element={<Compare />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+
+    </div>
+  );
+};
+
+export default App;
