@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+<h1>Dashboard</h1>
+<h2 id="welcome"></h2>
+
+<button onclick="logout()">
+    Logout
+</button>
+
+<script>
+let username =
+    localStorage.getItem(
+        "loggedInUser"
+    );
+
+if (!username) {
+    window.location.href =
+        "login.html";
+}
+
+document.getElementById(
+    "welcome"
+).innerText =
+    "Welcome " + username;
+
+function logout() {
+    localStorage.removeItem(
+        "loggedInUser"
+    );
+
+    alert("Logged Out");
+
+    window.location.href =
+        "login.html";
+}
+</script>
+
+</body>
+</html>
